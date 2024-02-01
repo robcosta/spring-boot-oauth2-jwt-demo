@@ -11,7 +11,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
-public class SecurityConfig {
+public class SecurityConfigOLD {
 	
 	@Bean
 	public PasswordEncoder getPasswordEncoder() {
@@ -19,6 +19,7 @@ public class SecurityConfig {
 	}
 	
 	
+	//****** Liberação do h2-console ******************
 	@Bean
 	@Profile("test")
 	@Order(1)
@@ -28,6 +29,14 @@ public class SecurityConfig {
 				.headers(headers -> headers.frameOptions(frameOptions -> frameOptions.disable()));
 		return http.build();
 	}
+	
+	
+	//****** Outra forma de liberar o h2-console ******************
+//	@Bean
+//	@Order(1)
+//    public WebSecurityCustomizer webSecurityCustomizer() {
+//        return (web) -> web.ignoring().requestMatchers(new AntPathRequestMatcher("/h2-console/**"));
+//    }
 	
 	@Bean
 	@Order(2)
