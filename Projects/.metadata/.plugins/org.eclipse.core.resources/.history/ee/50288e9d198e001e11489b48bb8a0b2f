@@ -1,0 +1,13 @@
+package com.robertocosta.rcevent;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class RceventApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(RceventApplication.class, args);
+	}
+
+}

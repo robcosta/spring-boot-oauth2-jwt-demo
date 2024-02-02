@@ -1,0 +1,11 @@
+package com.robertocosta.crudcliente.service.exceptions;
+
+public class ResourceUniqueException extends RuntimeException {
+
+	private static final long serialVersionUID = 1L;
+	
+	public ResourceUniqueException(String msg) {
+		super(msg);
+	}
+
+}

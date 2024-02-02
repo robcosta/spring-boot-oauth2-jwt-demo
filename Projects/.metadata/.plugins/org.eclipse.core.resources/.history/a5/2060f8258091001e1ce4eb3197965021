@@ -1,0 +1,15 @@
+package com.robertocosta.crudcliente.controllers;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping(name = "/client")
+public class ClientController {
+	
+	@GetMapping
+	public String teste() {
+		return "Até aqui me ajudou o Senhor!";
+	}
+}

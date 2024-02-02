@@ -1,0 +1,5 @@
+package com.robertocosta.dscommerce.dto;
+
+public class FieldMessage {
+
+}

@@ -1,0 +1,6 @@
+package com.devsuperior.aula.dto;
+
+public class DepartmentDTO {
+	private Long id;
+	private String name;
+}

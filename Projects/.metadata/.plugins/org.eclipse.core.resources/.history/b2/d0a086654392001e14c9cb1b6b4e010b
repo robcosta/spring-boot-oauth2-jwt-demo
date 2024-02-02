@@ -1,0 +1,9 @@
+package com.robertocosta.crudcliente.controllers.handers;
+
+import org.springframework.web.bind.annotation.ControllerAdvice;
+
+@ControllerAdvice
+public class ControllerExceptionHandler {
+
+	@ExceptionHandler(ClientController.class)
+}

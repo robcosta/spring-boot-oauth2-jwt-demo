@@ -1,0 +1,45 @@
+package com.devsuperior.dsmeta.dto;
+
+import java.time.LocalDate;
+
+import com.devsuperior.dsmeta.entities.Sale;
+
+public class SaleMinDTO {
+
+	private Long id;
+	private Double amount;
+	private LocalDate date;
+	private String nameSeller;
+	
+
+	public SaleMinDTO(Long id, Double amount, LocalDate date, SellerMinDTO seller) {
+		super();
+		this.id = id;
+		this.amount = amount;
+		this.date = date;
+		this.nameSeller = seller.getName();
+	}
+
+	public SaleMinDTO(Sale entity ) {
+		id = entity.getId();
+		amount = entity.getAmount();
+		date = entity.getDate();
+		nameSeller = entity.getSeller().getName();
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public Double getAmount() {
+		return amount;
+	}
+
+	public LocalDate getDate() {
+		return date;
+	}
+
+	public String getNameSeller() {
+		return nameSeller;
+	}
+}

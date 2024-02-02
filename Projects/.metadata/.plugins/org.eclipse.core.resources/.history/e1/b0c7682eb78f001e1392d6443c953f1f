@@ -1,0 +1,21 @@
+package com.robertocosta.dscommerce.controllers.handlers;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+
+import com.robertocosta.dscommerce.dto.CustomError;
+
+import jakarta.servlet.http.HttpServletRequest;
+
+@ControllerAdvice
+public class ControllerExceptionHandler {
+
+	@ExceptionHandler(CustomException.class)
+	public ResponseEntity<CustomError> customName(CustomException e, HttpServletRequest request){
+		HttpStatus status = HttpStatus.NOT_FOUND;
+		CustomError err = new .e..e
+	    return ResponseEntity.status(status).body(err);
+	}
+}

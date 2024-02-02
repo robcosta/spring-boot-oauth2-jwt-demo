@@ -1,0 +1,18 @@
+package com.devsuperior.dsmeta;
+
+import java.util.List;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.devsuperior.uri2602.DTO.CustomerMinDTO;
+import com.devsuperior.uri2602.projections.CustomerMinProjection;
+
+@SpringBootApplication
+public class DsmetaApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(DsmetaApplication.class, args);
+	}
+}

@@ -84,7 +84,7 @@ public class User implements UserDetails{
 		return roles;
 	}
 
-    public void addRules(Role role) {
+	public void addRules(Role role) {
     	roles.add(role);
     }
     

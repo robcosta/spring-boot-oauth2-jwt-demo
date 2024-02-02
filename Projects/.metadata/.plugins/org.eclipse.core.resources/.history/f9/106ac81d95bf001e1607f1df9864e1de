@@ -1,0 +1,26 @@
+package com.devsuperior.dsmeta.dto;
+
+import com.devsuperior.dsmeta.entities.Sale;
+
+public class SaleSumSellerDTO {
+	private String sellerName;
+	private Double total;
+	
+	public SaleSumSellerDTO(SellerMinDTO seller, Double total) {
+		this.total = total;
+		this.sellerName = seller.getName();
+	}
+
+	public SaleSumSellerDTO(Sale entity ) {
+		sellerName = entity.getSeller().getName();
+		total = entity.getAmount();
+	}
+
+	public Double getAmount() {
+		return total;
+	}
+
+	public String getSellerName() {
+		return sellerName;
+	}
+}

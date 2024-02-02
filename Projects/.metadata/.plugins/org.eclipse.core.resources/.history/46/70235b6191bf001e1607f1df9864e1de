@@ -1,0 +1,27 @@
+package com.devsuperior.dsmeta.dto;
+
+import com.devsuperior.dsmeta.entities.Seller;
+
+public class SellerMinDTO2 {
+
+	private Long id;
+	private String name;
+	
+	public SellerMinDTO2(Long id, String name) {
+		this.id = id;
+		this.name = name;
+	}
+	
+	public SellerMinDTO2(Seller entity) {
+		id = entity.getId();
+		name = entity.getName();
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public String getName() {
+		return name;
+	}
+}
