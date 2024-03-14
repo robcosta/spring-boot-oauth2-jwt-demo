@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //import org.springframework.security.crypto.password.PasswordEncoder;
 
 @SpringBootApplication
-public class DemoApplication {//implements CommandLineRunner{
+public class DemoApplication { //implements CommandLineRunner{
 
 //	@Autowired
 //	private PasswordEncoder passwordEncoder;
